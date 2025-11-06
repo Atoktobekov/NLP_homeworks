@@ -24,7 +24,7 @@ const trStopWords = {"a", "acaba", "altı", "altmış", "ama", "ancak", "arada",
   "dolayı", "dolayısıyla", "dört", "edecek", "eden", "ederek", "edilecek", "ediliyor",
   "edilmesi", "ediyor", "eğer", "elbette", "elli", "en", "etmesi", "etti", "ettiği",
   "ettiğini", "fakat", "falan", "filan", "gene", "gereği", "gerek", "gibi", "göre", "hala",
-  "halde", "halen", "hangi", "hangisi", "hani", "hatta", "hem", "henüz", "hep", "hepsi", "her",
+  "halde", "halen", "hangi", "hangisi", "hani", "hatta", "hem", "henüz", "hep", "hepsi", "her","ve",
   "herhangi", "herkes", "herkese", "herkesi", "herkesin", "hiç", "hiçbir", "i", "ı", "için"};
 
 const ruStopWords = {"а", "без", "более", "больше", "будет", "будто", "бы", "был", "была", "были",
