@@ -34,7 +34,7 @@ class FrequencyChart extends StatelessWidget {
                         getTitlesWidget: (value, meta) {
                           if (value.toInt() < topItems.length) {
                             return Transform.rotate(
-                              angle: 45 * 3.1415927 / 180, // угол в радианах
+                              angle: 40 * 3.1415927 / 180, // угол в радианах
                               child: Text(
                                 topItems[value.toInt()].key,
                                 style: const TextStyle(fontSize: 10),
@@ -57,7 +57,7 @@ class FrequencyChart extends StatelessWidget {
                         barRods: [
                           BarChartRodData(
                             toY: topItems[i].value.toDouble(),
-                            color: Theme.of(context).colorScheme.primary,
+                            color: Colors.deepPurpleAccent,//Theme.of(context).colorScheme.primary,
                             width: 16,
                             borderRadius: BorderRadius.circular(4),
                           ),
