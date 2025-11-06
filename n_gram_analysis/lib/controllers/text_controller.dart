@@ -1,13 +1,14 @@
 import 'package:n_gram_analysis/models/text_analysis_model.dart';
 import 'package:n_gram_analysis/repositories/text_repository.dart';
+import 'package:n_gram_analysis/models/stopwords.dart';
 
 class TextAnalysisController {
   final TextRepository _repository = TextRepository();
 
   static final _stopWords = {
-    'en': {'the', 'a', 'and', 'is', 'in', 'of', 'to', 'it'},
-    'ru': {'и', 'в', 'на', 'с', 'что', 'не', 'это', 'как'},
-    'tr': {'ve', 'bir', 'bu', 'için', 'de', 'da', 'ile'},
+    'en': enStopWords,
+    'ru': ruStopWords,
+    'tr': trStopWords,
   };
 
   TextAnalysisResult analyzeText(String text, String lang) {
